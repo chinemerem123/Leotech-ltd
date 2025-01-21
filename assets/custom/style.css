@@ -1,0 +1,37 @@
+.text-orange {
+  color: #FF9500;
+}
+
+.br-15 {
+  border-radius: 15px;
+}
+
+.card-dark {
+  background-color: #041827;
+}
+
+.account-title {
+  justify-content: center;
+  background-color: rgba(194, 194, 194, 0.1);
+  padding: 5px;
+  width: 170px;
+  border-radius: 50px;
+  position: relative;
+  left: calc(50% - 85px);
+}
+.account-title img {
+  width: 20px;
+}
+.account-title span {
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+.wallet-title {
+  position: relative;
+}
+.wallet-title a {
+  position: absolute;
+  right: 0;
+}/*# sourceMappingURL=style.css.map */

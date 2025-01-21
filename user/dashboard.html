@@ -12,18 +12,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.png">
+        <link rel="shortcut icon" href="/assets/images/favicon.png">
 
         <!-- App css -->
-        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style" />
+        <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style" />
 
         <!-- Icons -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="/assets/custom/style.css">
 
     </head>
 
     <!-- body start -->
-    <body data-menu-color="light" data-sidebar="default"
+    <body data-menu-color="light" data-sidebar="default">
 
         <!-- Begin page -->
         <div id="app-layout">
@@ -69,7 +71,7 @@
         
                             <li class="dropdown notification-list topbar-dropdown">
                                 <a class="nav-link dropdown-toggle nav-user me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                    <img src="assets/images/users/user-5.jpg" alt="user-image" class="rounded-circle">
+                                    <img src="/assets/images/users/user-5.jpg" alt="user-image" class="rounded-circle">
                                     <span class="pro-user-name ms-1">
                                         John Smith <i class="mdi mdi-chevron-down"></i> 
                                     </span>
@@ -118,7 +120,7 @@
                         
                             <a class='logo logo-dark' href='index.html'>
                                 <span class="logo-lg">
-                                    <img src="assets/images/logo-dark.png" alt="" height="24">
+                                    <img src="/assets/images/logo-dark.png" alt="" height="24">
                                 </span>
                             </a>
                         </div>
@@ -127,7 +129,7 @@
 
 
                             <li>
-                                <a href="/user/empty.html" class="active">
+                                <a href="/user/dashboard.html" class="active">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.557 2.75H4.682A1.93 1.93 0 0 0 2.75 4.682v3.875a1.94 1.94 0 0 0 1.932 1.942h3.875a1.94 1.94 0 0 0 1.942-1.942V4.682A1.94 1.94 0 0 0 8.557 2.75m10.761 0h-3.875a1.94 1.94 0 0 0-1.942 1.932v3.875a1.943 1.943 0 0 0 1.942 1.942h3.875a1.94 1.94 0 0 0 1.932-1.942V4.682a1.93 1.93 0 0 0-1.932-1.932m0 10.75h-3.875a1.94 1.94 0 0 0-1.942 1.933v3.875a1.94 1.94 0 0 0 1.942 1.942h3.875a1.94 1.94 0 0 0 1.932-1.942v-3.875a1.93 1.93 0 0 0-1.932-1.932M8.557 13.5H4.682a1.943 1.943 0 0 0-1.932 1.943v3.875a1.93
                                          1.93 0 0 0 1.932 1.932h3.875a1.94 1.94 0 0 0 1.942-1.932v-3.875a1.94 1.94 0 0 0-1.942-1.942"/></svg>
@@ -138,7 +140,7 @@
 
                             
                             <li>
-                                <a href="/user/purchase-site.html" class="active">
+                                <a href="#sidebarDashboards" class="active">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.162 10.926L13.716 4.48a2.5 2.5 0 0 0-1.767-.732h-5.2a3 3 0 0 0-3 3v5.2a2.5 2.5 0 0 0 .731 1.768l6.445 6.446a4 4 0 0 0 5.657 0l1.79-1.79l1.79-1.79a4 4 0 0 0 0-5.657"/>
                                         <circle cx="7.738" cy="7.738" r="1.277" fill="currentColor" transform="rotate(-45 7.738 7.738)"/></g></svg>
@@ -251,7 +253,29 @@
 
                         <div class="row">
 
-                         
+                            <!-- ROW 1 STARTS HERE -->
+                            <div class="col-md-6 col-sm-12">
+
+                                <div class="wallet-title d-flex">
+                                    <div class="h6 fw-bold">Account Balance</div>
+                                    <a href="#" class="text-orange">All transaction history</a>
+                                </div>
+
+                                <div class="card p-3 br-15 card-dark text-center mt-2">
+                                    <div class="account-title d-flex">
+                                        <img src="/assets/images/Nigeria (NG).png" alt="">
+                                        <span class="text-white">Wallet Balance</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                              <!-- ROW 1 ENDS HERE -->
+
+                               <!-- ROW 2 STARTS HERE -->
+                            <div class="col-md-6 col-sm-12">
+                                ddd
+                            </div>
+                             <!-- ROW 2 ENDS HERE -->
                         </div>
 
                          <!--ROW ENDS HERE-->
@@ -281,25 +305,25 @@
         <!-- END wrapper -->
 
         <!-- Vendor -->
-        <script src="assets/libs/jquery/jquery.min.js"></script>
-        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="assets/libs/node-waves/waves.min.js"></script>
-        <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
-        <script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
-        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="/assets/libs/jquery/jquery.min.js"></script>
+        <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="/assets/libs/node-waves/waves.min.js"></script>
+        <script src="/assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+        <script src="/assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
+        <script src="/assets/libs/feather-icons/feather.min.js"></script>
 
         <!-- Apexcharts JS -->
-        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+        <script src="/assets/libs/apexcharts/apexcharts.min.js"></script>
 
         <!-- for basic area chart -->
         <script src="../../../apexcharts.com/samples/assets/stock-prices.js"></script>
 
         <!-- Widgets Init Js -->
-        <script src="assets/js/pages/crm-dashboard.init.js"></script>
+        <script src="/assets/js/pages/crm-dashboard.init.js"></script>
 
         <!-- App js-->
-        <script src="assets/js/app.js"></script>
+        <script src="/assets/js/app.js"></script>
 
     </body>
 </html>
