@@ -6,26 +6,26 @@
   border-radius: 15px;
 }
 
+.br-50 {
+  border-radius: 50px;
+}
+
 .card-dark {
   background-color: #041827;
 }
 
-.account-title {
-  justify-content: center;
+.text-green {
+  color: green;
+}
+
+.btn-white-50 {
+  background-color: rgba(179, 179, 179, 0.1);
+  color: white;
+  padding: 10px;
+}
+.btn-white-50:hover {
   background-color: rgba(194, 194, 194, 0.1);
-  padding: 5px;
-  width: 170px;
-  border-radius: 50px;
-  position: relative;
-  left: calc(50% - 85px);
-}
-.account-title img {
-  width: 20px;
-}
-.account-title span {
-  margin-left: 10px;
-  color: rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
+  color: white;
 }
 
 .wallet-title {
@@ -34,4 +34,102 @@
 .wallet-title a {
   position: absolute;
   right: 0;
+}
+
+.hold-bg-1 {
+  background-color: #000;
+}
+
+.hold-bg-2 {
+  background-color: #3BA151;
+}
+
+.hold-bg-3 {
+  background-color: #FF9500;
+}
+
+.hold-bg-4 {
+  background-color: #E91E1E;
+}
+
+.hold-bg-5 {
+  background-color: #3A37E4;
+}
+
+.hold-bg-6 {
+  background-color: #E91E5F;
+}
+
+.hold-bg-7 {
+  background-color: #EB14DD;
+}
+
+.hold-bg-8 {
+  background-color: #1E83E9;
+}
+
+#wallet-card .account-title {
+  justify-content: center;
+  background-color: rgba(194, 194, 194, 0.1);
+  padding: 5px;
+  width: 170px;
+  border-radius: 50px;
+  position: relative;
+  left: calc(50% - 85px);
+  scale: 0.8;
+}
+#wallet-card .account-title img {
+  width: 20px;
+}
+#wallet-card .account-title span {
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+#wallet-card .balance-hold {
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#last-transaction .transaction-title {
+  position: relative;
+}
+#last-transaction .transaction-title a {
+  position: absolute;
+  right: 0;
+}
+#last-transaction .transaction-hold {
+  position: relative;
+}
+#last-transaction .transaction-hold #left #purchase-date {
+  font-size: 13px;
+}
+#last-transaction .transaction-hold #right {
+  position: absolute;
+  text-align: right;
+  right: 0;
+}
+
+#card-info {
+  position: relative;
+}
+#card-info .icon-hold {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card-info .text-hold span {
+  font-size: 18px;
+}
+#card-info a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 13px;
+  color: #FF9500;
 }/*# sourceMappingURL=style.css.map */
