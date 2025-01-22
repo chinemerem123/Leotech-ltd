@@ -18,6 +18,10 @@
     color: green;
 }
 
+.gary{
+    color: rgb(166, 166, 166) !important;
+}
+
 .btn-white-50{
     background-color:rgba(179, 179, 179, 0.1);
     color: white;
@@ -121,11 +125,12 @@
         position: relative;
         #left{
             #purchase-date{
-                font-size: 13px;
+                font-size: 12px;
             }
         }
 
         #right{
+            font-size: 13px;
             position: absolute;
             text-align: right;
             right: 0;
@@ -167,6 +172,7 @@
         border-radius: 5px;
         width: 95%;
         color: #FF9500;
+        font-size: 12px;
     }
 
     .copy-btn{
