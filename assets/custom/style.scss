@@ -160,5 +160,26 @@
     }
 }
 
+#ref-card{
+    position: relative;
+    .ref-link{
+        background-color: #FFF8ED;
+        border-radius: 5px;
+        width: 95%;
+        color: #FF9500;
+    }
+
+    .copy-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF9500;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        position: absolute;
+        right: 0px;
+    }
+}
   
 
