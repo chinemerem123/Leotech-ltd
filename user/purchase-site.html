@@ -20,6 +20,8 @@
         <!-- Icons -->
         <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
 
+        <link rel="stylesheet" href="/assets/custom/style.css">
+
     </head>
 
     <!-- body start -->
@@ -40,7 +42,7 @@
                                 </button>
                             </li>
                             <li class="d-none d-lg-block">
-                                <h5 class="mb-0"> Dashboard </h5>
+                                <h5 class="mb-0"> Purchase Site</h5>
                             </li>
                         </ul>
 
@@ -127,7 +129,7 @@
 
 
                             <li>
-                                <a href="/user/dashboard.html" class="active">
+                                <a href="/user/dashboard.html" class="">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.557 2.75H4.682A1.93 1.93 0 0 0 2.75 4.682v3.875a1.94 1.94 0 0 0 1.932 1.942h3.875a1.94 1.94 0 0 0 1.942-1.942V4.682A1.94 1.94 0 0 0 8.557 2.75m10.761 0h-3.875a1.94 1.94 0 0 0-1.942 1.932v3.875a1.943 1.943 0 0 0 1.942 1.942h3.875a1.94 1.94 0 0 0 1.932-1.942V4.682a1.93 1.93 0 0 0-1.932-1.932m0 10.75h-3.875a1.94 1.94 0 0 0-1.942 1.933v3.875a1.94 1.94 0 0 0 1.942 1.942h3.875a1.94 1.94 0 0 0 1.932-1.942v-3.875a1.93 1.93 0 0 0-1.932-1.932M8.557 13.5H4.682a1.943 1.943 0 0 0-1.932 1.943v3.875a1.93
                                          1.93 0 0 0 1.932 1.932h3.875a1.94 1.94 0 0 0 1.942-1.932v-3.875a1.94 1.94 0 0 0-1.942-1.942"/></svg>
@@ -242,16 +244,241 @@
                     <div class="container-fluid">
                         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
                             <div class="flex-grow-1">
-                                <h3 class="fs-18 fw-semibold m-0">Hey Christian 🙌🏽</h3>
-                                <p>Welcome to Henryleo technology, what can we do for you today.</p>
+                                <h3 class="fs-18 fw-semibold m-0">Available Websites</h3>
+                              
+                            </div>
+
+                            <div class="flex-grow-2">
+                                <form action="" class="d-flex">
+                              <select name="website-type" id="website-type" class="form-select">
+                                <option value="investment">Investment Websites</option>
+                                <option value="ecommerce">Ecommerce Websites</option>
+                                <option value="church">Church Websites</option>
+                              </select>
+
+                              <select name="sort" id="sort" class="form-select ms-2">
+                                <option value="popularity ">Sort by Popularity </option>
+                                <option value="date">Sort by date</option>
+                                <option value="cheapest">Sort by cheapest</option>
+                              </select>
+                            </form>
+
                             </div>
                         </div>
 
                         <!--ROW START HERE-->
 
-                        <div class="row">
+                        <div class="row mt-2">
+                         <div class="col-xl-4 col-md-3 col-sm-12">
+                            <div class="card site-holder p-2 br-15">
 
-                         
+                                <div class="img-hold">
+                                    <img src="/assets/images/DASHBOARD.png" alt="">
+                                </div>
+
+                                <div class="card-title mt-2 p-2">
+                                    <span class="">Crypto Investment website with NFT...</span><br>
+                                    <span class="h6">Built with Laravel</span>
+                                </div>
+
+                                <div class="price-tag mt-0 d-flex align-items-sm-center flex-sm-row flex-column p-2">
+                                    <div class="flex-grow-1">
+                                        <div class="h5 fw-bold">₦300,000.00</div>
+                                    </div>
+
+                                    <div class="flex-grow-2">
+                                        <span id="total-purchase" class="fs-12">500 Purchase</span>
+                                    </div>
+                                </div>
+
+                                <div class="btn-pp d-flex p-2">
+                                    <a href="#" class="btn btn-log">Purchase</a>
+                                    <a href="#" class="btn btn-stroke ms-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M3.275 15.296C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296C4.972 6.5 7.818 4 12 4s7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704Z"/>
+                                            <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"/></g></svg>
+                                        Preview</a>
+                                </div>
+                               
+                            </div>
+                         </div>
+
+                         <div class="col-xl-4 col-md-3 col-sm-12">
+                            <div class="card site-holder p-2 br-15">
+
+                                <div class="img-hold">
+                                    <img src="/assets/images/DASHBOARD.png" alt="">
+                                </div>
+
+                                <div class="card-title mt-2 p-2">
+                                    <span class="">Crypto Investment website with NFT...</span><br>
+                                    <span class="h6">Built with Laravel</span>
+                                </div>
+
+                                <div class="price-tag mt-0 d-flex align-items-sm-center flex-sm-row flex-column p-2">
+                                    <div class="flex-grow-1">
+                                        <div class="h5 fw-bold">₦300,000.00</div>
+                                    </div>
+
+                                    <div class="flex-grow-2">
+                                        <span id="total-purchase" class="fs-12">500 Purchase</span>
+                                    </div>
+                                </div>
+
+                                <div class="btn-pp d-flex p-2">
+                                    <a href="#" class="btn btn-log">Purchase</a>
+                                    <a href="#" class="btn btn-stroke ms-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M3.275 15.296C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296C4.972 6.5 7.818 4 12 4s7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704Z"/>
+                                            <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"/></g></svg>
+                                        Preview</a>
+                                </div>
+                               
+                            </div>
+                         </div>
+
+                         <div class="col-xl-4 col-md-3 col-sm-12">
+                            <div class="card site-holder p-2 br-15">
+
+                                <div class="img-hold">
+                                    <img src="/assets/images/DASHBOARD.png" alt="">
+                                </div>
+
+                                <div class="card-title mt-2 p-2">
+                                    <span class="">Crypto Investment website with NFT...</span><br>
+                                    <span class="h6">Built with Laravel</span>
+                                </div>
+
+                                <div class="price-tag mt-0 d-flex align-items-sm-center flex-sm-row flex-column p-2">
+                                    <div class="flex-grow-1">
+                                        <div class="h5 fw-bold">₦300,000.00</div>
+                                    </div>
+
+                                    <div class="flex-grow-2">
+                                        <span id="total-purchase" class="fs-12">500 Purchase</span>
+                                    </div>
+                                </div>
+
+                                <div class="btn-pp d-flex p-2">
+                                    <a href="#" class="btn btn-log">Purchase</a>
+                                    <a href="#" class="btn btn-stroke ms-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M3.275 15.296C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296C4.972 6.5 7.818 4 12 4s7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704Z"/>
+                                            <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"/></g></svg>
+                                        Preview</a>
+                                </div>
+                               
+                            </div>
+                         </div>
+
+                         <div class="col-xl-4 col-md-3 col-sm-12">
+                            <div class="card site-holder p-2 br-15">
+
+                                <div class="img-hold">
+                                    <img src="/assets/images/DASHBOARD.png" alt="">
+                                </div>
+
+                                <div class="card-title mt-2 p-2">
+                                    <span class="">Crypto Investment website with NFT...</span><br>
+                                    <span class="h6">Built with Laravel</span>
+                                </div>
+
+                                <div class="price-tag mt-0 d-flex align-items-sm-center flex-sm-row flex-column p-2">
+                                    <div class="flex-grow-1">
+                                        <div class="h5 fw-bold">₦300,000.00</div>
+                                    </div>
+
+                                    <div class="flex-grow-2">
+                                        <span id="total-purchase" class="fs-12">500 Purchase</span>
+                                    </div>
+                                </div>
+
+                                <div class="btn-pp d-flex p-2">
+                                    <a href="#" class="btn btn-log">Purchase</a>
+                                    <a href="#" class="btn btn-stroke ms-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M3.275 15.296C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296C4.972 6.5 7.818 4 12 4s7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704Z"/>
+                                            <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"/></g></svg>
+                                        Preview</a>
+                                </div>
+                               
+                            </div>
+                         </div>
+
+                         <div class="col-xl-4 col-md-3 col-sm-12">
+                            <div class="card site-holder p-2 br-15">
+
+                                <div class="img-hold">
+                                    <img src="/assets/images/DASHBOARD.png" alt="">
+                                </div>
+
+                                <div class="card-title mt-2 p-2">
+                                    <span class="">Crypto Investment website with NFT...</span><br>
+                                    <span class="h6">Built with Laravel</span>
+                                </div>
+
+                                <div class="price-tag mt-0 d-flex align-items-sm-center flex-sm-row flex-column p-2">
+                                    <div class="flex-grow-1">
+                                        <div class="h5 fw-bold">₦300,000.00</div>
+                                    </div>
+
+                                    <div class="flex-grow-2">
+                                        <span id="total-purchase" class="fs-12">500 Purchase</span>
+                                    </div>
+                                </div>
+
+                                <div class="btn-pp d-flex p-2">
+                                    <a href="#" class="btn btn-log">Purchase</a>
+                                    <a href="#" class="btn btn-stroke ms-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M3.275 15.296C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296C4.972 6.5 7.818 4 12 4s7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704Z"/>
+                                            <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"/></g></svg>
+                                        Preview</a>
+                                </div>
+                               
+                            </div>
+                         </div>
+
+                         <div class="col-xl-4 col-md-3 col-sm-12">
+                            <div class="card site-holder p-2 br-15">
+
+                                <div class="img-hold">
+                                    <img src="/assets/images/DASHBOARD.png" alt="">
+                                </div>
+
+                                <div class="card-title mt-2 p-2">
+                                    <span class="">Crypto Investment website with NFT...</span><br>
+                                    <span class="h6">Built with Laravel</span>
+                                </div>
+
+                                <div class="price-tag mt-0 d-flex align-items-sm-center flex-sm-row flex-column p-2">
+                                    <div class="flex-grow-1">
+                                        <div class="h5 fw-bold">₦300,000.00</div>
+                                    </div>
+
+                                    <div class="flex-grow-2">
+                                        <span id="total-purchase" class="fs-12">500 Purchase</span>
+                                    </div>
+                                </div>
+
+                                <div class="btn-pp d-flex p-2">
+                                    <a href="#" class="btn btn-log">Purchase</a>
+                                    <a href="#" class="btn btn-stroke ms-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M3.275 15.296C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296C4.972 6.5 7.818 4 12 4s7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704Z"/>
+                                            <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"/></g></svg>
+                                        Preview</a>
+                                </div>
+                               
+                            </div>
+                         </div>
+
                         </div>
 
                          <!--ROW ENDS HERE-->

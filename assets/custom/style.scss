@@ -33,6 +33,11 @@
     }
 }
 
+.fs-12{
+    font-size: 12px;
+}
+
+
 .wallet-title{
         
     position: relative;
@@ -73,6 +78,39 @@
 
 .hold-bg-8{
     background-color: #1E83E9;
+}
+
+.border-rounded{
+    border-radius: 50px;
+    /* padding: 12px; */
+}
+.btn-log{
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+    border: none;
+    width: 60%;
+    background-color:#FF9500 ;
+}
+
+.btn-stroke{
+    border-radius: 50px;
+    padding: 10px;
+    color: #FF9500;
+    border: 1.5px solid #FF9500;
+    width: 60%;
+    background-color:transparent;
+
+    &:hover{
+        color: #FF9500;
+        border: 1.5px solid #FF9500;
+    }
+}
+
+.btn-log:hover{
+background-color: #ff9b0f;
+border: none;
+color: white;
 }
 
 
@@ -188,4 +226,16 @@
     }
 }
   
+.site-holder{
+    .img-hold{
+        position: relative;
+        width: 100%;
+        height: 180px;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
 
