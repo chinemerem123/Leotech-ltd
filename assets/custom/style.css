@@ -225,4 +225,25 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
+}
+
+.img-preview-grid-2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+.check-info {
+  border-left: 5px solid rgb(0, 173, 55);
+  border-radius: 10px;
+}
+
+.sum-box {
+  position: relative;
+}
+.sum-box #website-price {
+  position: absolute;
+  right: 20px;
 }/*# sourceMappingURL=style.css.map */
