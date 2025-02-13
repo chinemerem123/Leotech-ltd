@@ -255,6 +255,15 @@
   right: 20px;
 }
 
+.price-summary .d-flex {
+  position: relative;
+}
+.price-summary .d-flex .right {
+  position: absolute;
+  right: 20px;
+  text-align: right;
+}
+
 .summary-details {
   position: relative;
   font-size: 13px;

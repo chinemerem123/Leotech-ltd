@@ -80,6 +80,7 @@
     background-color: #1E83E9;
 }
 
+
 .border-rounded{
     border-radius: 50px;
     /* padding: 12px; */
@@ -290,6 +291,18 @@ img{
     position: absolute;
     right: 20px;
 }
+}
+
+.price-summary{
+    .d-flex{
+        position: relative;
+
+        .right{
+            position: absolute;
+            right: 20px;
+            text-align: right;
+        }
+    }
 }
 
 .summary-details{
