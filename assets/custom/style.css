@@ -246,4 +246,12 @@
 .sum-box #website-price {
   position: absolute;
   right: 20px;
+}
+
+.summary-details {
+  position: relative;
+}
+.summary-details .right {
+  position: absolute;
+  right: 20px;
 }/*# sourceMappingURL=style.css.map */

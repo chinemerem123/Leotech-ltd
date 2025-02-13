@@ -281,3 +281,11 @@ img{
 }
 }
 
+.summary-details{
+    position: relative;
+    .right{
+        position: absolute;
+        right: 20px;
+    }
+}
+
