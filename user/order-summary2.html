@@ -259,81 +259,57 @@
 
                             <div class="col-md-8 col-sm-12">
                                 <div class="card p-4 br-15 position-relative">
-                                    <div class="card-header p-0">
-                                        <div class="h4">Billing Details</div>
-                                        <p class="fs-12">We collects and use personal data in accordance with our <a href="#" class="text-orange">Privacy Policy</a> to 
-                                            reach out to you about purchased website you have purchased and further information will be passed down.</p>
+
+                                    <div class="card-header p-0 d-flex">
+                                        <div class="h5" style="position: relative;">Billing Details</div>
+                                        <a href="#" style="position: absolute; right: 20px;">Edit</a>
                                     </div>
 
-                                    <form action="/user/order-summary2.html" class="mt-3">
-                                        <div class="d-flex w-100">
-                                            <div class="mb-3 w-100">
-                                                <label for="example-first-name" class="form-label">First name</label>
-                                                <input type="text" id="example-first-name" name="example-first-name" class="form-control" placeholder="Enter first name">
-                                            </div>
-
-                                            <div class="mb-3 w-100 ms-2">
-                                                <label for="example-last-name" class="form-label">Last name</label>
-                                                <input type="text" id="example-last-name" name="example-last-name" class="form-control" placeholder="Enter last name">
-                                            </div>
-
-                                        </div>
-
-                                        <div class="mb-3 w-100">
-                                            <label for="example-company" class="form-label">Company</label>
-                                            <input type="text" id="example-company" name="example-company" class="form-control" placeholder="Enter company name">
-                                        </div>
-
-                                        <div class="d-flex w-100">
-                                            <div class="mb-3 w-100">
-                                                <label for="example-email" class="form-label">Email</label>
-                                                <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Enter email">
-                                            </div>
-
-                                            <div class="mb-3 w-100 ms-2">
-                                                <label for="example-phone" class="form-label">Phone number</label>
-                                                <input type="text" id="example-phone" name="example-email" class="form-control" placeholder="Enter phone number">
-                                            </div>
-
-                                        </div>
-
-                                        <div class="d-flex w-100">
-                                            <div class="mb-3 w-100">
-                                                <label for="example-country" class="form-label">Country</label>
-                                                <input type="text" id="example-country" name="example-country" class="form-control" placeholder="Enter country">
-                                            </div>
-
-                                            <div class="mb-3 w-100 ms-2">
-                                                <label for="example-state" class="form-label">State</label>
-                                                <input type="text" id="example-state" name="example-state" class="form-control" placeholder="Enter state">
-                                            </div>
-
-                                        </div>
-
-                                        <div class="d-flex w-100">
-                                            <div class="mb-3 w-100">
-                                                <label for="example-city" class="form-label">City</label>
-                                                <input type="text" id="example-city" name="example-city" class="form-control" placeholder="Enter city">
-                                            </div>
-
-                                            <div class="mb-3 w-100 ms-2">
-                                                <label for="example-address" class="form-label">Address</label>
-                                                <input type="text" id="example-address" name="example-address" class="form-control" placeholder="Enter address">
-                                            </div>
-
-                                        </div>
-
-                                        <div class=" save-btn">
-                                            <button class="btn btn-log" id="save-address">Save & Continue</button>
-                                        </div>
-                                     
+                                    <div class="address-preview">
                                        
-                                    </form>
+                                            <div class="mt-3" id="company-name">Finance</div>
+                                            <div class="mt-3" id="address">NO 5 umushi Street</div>
+                                            <div class="mt-3" id="state-city">AWKA TOWN, Anambra</div>
+                                            <div class="mt-3" id="country">Nigeria</div>
+                                            <div class="mt-3" id="number">09021233422</div>
+                                 
+                                    </div>
+
+                                    
                                    
                                 </div>
 
-                                <div class="card p-4 br-15 bg-gray">
+                                <div class="card p-4 br-15">
                                     <div class="h5">Payment Method</div>
+
+                                    <a href="#" class="mt-3">
+                                    <div class="card p-3 bg-gray d-flex payment-method-item">
+                                        <span>Wallet payment</span>
+                                        <img src="/assets/images/svg/solar_wallet-bold.svg" alt="" width="24">
+                                    </div>
+                                </a>
+
+                                <a href="#" class="mt-2">
+                                    <div class="card p-3 bg-gray d-flex payment-method-item">
+                                        <span>Card payment</span>
+                                        <img src="/assets/images/Credit card.png" alt="" width="120">
+                                    </div>
+                                </a>
+
+                                <a href="#" class="mt-2">
+                                    <div class="card p-3 bg-gray d-flex payment-method-item">
+                                        <span>Paypal</span>
+                                        <img src="/assets/images/svg/paypal.svg" alt="" width="24">
+                                    </div>
+                                </a>
+
+                                <a href="#" class="mt-2">
+                                    <div class="card p-3 bg-gray d-flex payment-method-item">
+                                        <span>Crypto</span>
+                                        <img src="/assets/images/crypto.png" alt="" width="80">
+                                    </div>
+                                </a>
+
                                 </div>
                             </div>
 
@@ -369,7 +345,7 @@
                                 </div>
                             </div>
     
-
+                            
                          
                         </div>
 

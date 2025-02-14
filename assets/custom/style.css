@@ -273,6 +273,31 @@
   right: 20px;
 }
 
+.save-btn {
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+.save-btn #save-address {
+  width: 200px;
+  position: absolute;
+  right: 0;
+}
+
+.payment-method-item {
+  border: 1.5px solid rgb(219, 219, 219);
+  position: relative;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+.payment-method-item:hover {
+  border: 2px solid #FF9500;
+}
+.payment-method-item img {
+  position: absolute;
+  right: 20px;
+}
+
 @media screen and (max-width: 800px) {
   .clus {
     font-size: 10px;
