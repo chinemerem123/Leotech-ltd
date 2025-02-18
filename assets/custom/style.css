@@ -320,7 +320,62 @@
   width: 50%;
 }
 
+.crypto-details {
+  position: relative;
+  width: 50%;
+  left: 25%;
+  margin-top: 40px;
+}
+
+.crypto-select {
+  position: relative;
+  width: 50%;
+  height: 80vh;
+  left: 25%;
+  top: calc(50% - 40vh);
+  overflow-y: scroll;
+}
+.crypto-select::-webkit-scrollbar {
+  display: none;
+}
+.crypto-select .card-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+.crypto-select .card-body {
+  margin-bottom: 50px;
+}
+.crypto-select .card-body a .crypto-item {
+  position: relative;
+}
+.crypto-select .card-body a .crypto-item .actual {
+  align-items: center;
+}
+.crypto-select .card-body a .crypto-item .actual .coin-na {
+  margin-left: 10px;
+}
+.crypto-select .card-body a .crypto-item .actual .coin-na .coin-price, .crypto-select .card-body a .crypto-item .actual .coin-na .coin-reading {
+  font-size: 13px;
+}
+.crypto-select .card-body a .crypto-item .price-to-pay {
+  position: absolute;
+  right: 10px;
+  text-align: right;
+}
+
 @media screen and (max-width: 800px) {
+  .crypto-select {
+    width: 100%;
+    left: 0%;
+    height: 90vh;
+  }
+  .crypto-details {
+    width: 100%;
+    left: 0%;
+    margin-top: 20px;
+  }
   .clus {
     font-size: 10px;
   }

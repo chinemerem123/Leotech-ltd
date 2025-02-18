@@ -363,8 +363,76 @@ img{
     }
 }
 
+.crypto-details{
+    position: relative;
+    width: 50%;
+    left: calc(50% - 25%);
+    margin-top: 40px;
+}
+
+.crypto-select{
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    left: calc(50% - 25%);
+    top: calc(50% - 40vh);
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    .card-header{
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .card-body{
+        margin-bottom: 50px;
+
+        a{
+
+      
+        .crypto-item{
+            position: relative;
+
+     .actual{
+        align-items: center;
+       .coin-na{
+        margin-left:10px;
+        .coin-price, .coin-reading{
+            font-size: 13px;
+        }
+    }
+       }
+
+       .price-to-pay{
+        position: absolute;
+        right: 10px;
+        text-align: right;
+       }
+    }
+     }
+    }
+}
+
 
 @media screen and (max-width:800px){
+
+    .crypto-select{
+        width: 100%;
+        left: calc(50% - 50%);
+        height: 90vh;
+    }
+
+    .crypto-details{
+        width: 100%;
+        left: calc(50% - 50%);
+        margin-top: 20px;
+    }
+
     .clus{
       font-size: 10px;
 
