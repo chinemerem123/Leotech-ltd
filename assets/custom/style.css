@@ -392,8 +392,35 @@
   width: 50%;
   left: 25%;
 }
+.crypto-payment-page .qr-hold {
+  width: 170px;
+  height: 170px;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: calc(50% - 85px);
+}
+.crypto-payment-page .det-hold .mb {
+  background-color: rgba(233, 233, 233, 0.4);
+  padding: 10px;
+  border-radius: 15px;
+}
+.crypto-payment-page .det-hold .mb input {
+  border: none;
+  background-color: transparent;
+}
+.crypto-payment-page .det-hold .token {
+  align-items: center;
+}
 
 @media screen and (max-width: 800px) {
+  .crypto-payment-page {
+    width: 100%;
+    left: 0%;
+  }
   .crypto-network {
     width: 100%;
     left: 0%;

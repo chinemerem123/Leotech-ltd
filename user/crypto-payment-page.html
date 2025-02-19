@@ -46,7 +46,68 @@
                  </div>
 
 
-            <div class="card p-4 br-15 crypto-paymet-page">
+            <div class="card p-4 br-15 crypto-payment-page mt-3">
+           
+                    <div id="ten-countdown" class="h6 fw-bold"></div>
+                    <div class="h5 text-center mt-2">Payment Details</div>
+                    <div class="qr-hold mt-1">
+                        <img src="" id="qrImg" alt="">
+                     </div>
+
+                     
+                     <div class="det-hold mt-3">
+                        <span>Crypto Token</span><br>
+                        <div class="mb mt-1">
+                          <div class="d-flex token">
+                            <img src="/assets/crypto/tether-usdt-logo.png" class="ms-2" alt="" width="35" height="35">
+                            <span class="fw-bold ms-2">USDT</span>
+                            <span class="ms-1 fs-12">(TRC 20)</span>
+                          </div>
+                          
+                        </div>
+
+                        
+                        
+                     </div>
+
+                     <div class="det-hold mt-3">
+                        <span>Amount</span><br>
+                        <div class="mb mt-1">
+                            <div class="row">
+                                <div class="col-9">
+                                    <input type="" id="amt-d" class="form-control" disabled> 
+                                </div>
+                                <div class="col-3" style="justify-content: center; align-items: center; display: flex;">
+                                <span class="text-gray" id="copy-amt" style="font-size: 14px; cursor: pointer;">copy</span>
+                                </div>
+                            </div>
+                          
+                        </div>
+
+                        
+                        
+                     </div>
+
+                     <div class="det-hold mt-2">
+                        <span>Address</span><br>
+                        <div class="mb mt-1">
+                            <div class="row">
+                                <div class="col-9">
+                                    <input type="" id="add-d" class="form-control" disabled> 
+                                </div>
+                                <div class="col-3" style="justify-content: center; align-items: center; display: flex;">
+                                <span class="text-gray" id="copy-add" style="font-size: 14px; cursor: pointer;">copy</span>
+                                </div>
+                            </div>
+                          
+                        </div>
+
+                        
+                        
+                     </div>
+
+                    <a href="#" class="btn btn-log w-100 mt-3" id="payment-made">I have made payment</a>
+
                 
             </div>
 
@@ -87,6 +148,95 @@
 
     <!-- App js-->
     <script src="/assets/js/app.js"></script>
+
+<!-- JAVASCRIPT CODE FOR TIMER-->
+    <script>
+
+        function countdown( elementName, minutes, seconds )
+        {
+            var element, endTime, hours, mins, msLeft, time;
+        
+            function twoDigits( n )
+            {
+                return (n <= 9 ? "0" + n : n);
+            }
+        
+            function updateTimer()
+            {
+                msLeft = endTime - (+new Date);
+                if ( msLeft < 1000 ) {
+                    // element.innerHTML = "Time is up!";
+                    document.querySelector(".crypto-payment-page").style.display="none";
+                    document.querySelector(".out-order").style.display="block";
+                   
+                 
+                } else {
+                    time = new Date( msLeft );
+                    hours = time.getUTCHours();
+                    mins = time.getUTCMinutes();
+                    element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+                    setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+                }
+            }
+        
+            element = document.getElementById( elementName );
+            endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+            updateTimer();
+        }
+        
+        countdown( "ten-countdown", 10, 0 );
+    
+        let paymentMade=document.getElementById("payment-made");
+    
+        paymentMade.addEventListener('click',()=>{
+            document.querySelector(".hp-main-layout").style.display="none";
+            document.querySelector(".confirmed").style.display="block";
+        })
+    </script>
+
+
+<!-- CODE FOR QR CODE SCAN-->
+<script>
+    let amo=230;  
+    let tokenName="bitcoin";
+    let add="0x247ABa40d166BA0C90E988d1158Bbb70B172ee6C"; 
+    let qrcode=document.getElementById("qrImg");
+
+ document.getElementById("amt-d").value=amo;
+ document.getElementById("add-d").value=add;
+
+ qrcode.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+tokenName+":"+add+"?amount="+amo;
+    
+
+ //CODE FOR COPYING AMOUNT STARTS HERE
+ const copyAmt=document.getElementById("copy-amt");
+copyAmt.addEventListener('click', clipboardCopy);
+async function clipboardCopy() {
+let am = document.querySelector("#amt-d").value;
+await navigator.clipboard.writeText(am);
+copyAmt.textContent="Copied"
+setInterval(() => {
+   copyAmt.textContent="Copy"
+}, 5000);
+}
+
+//CODE FOR COPYING AMOUNT ENDS HERE
+
+
+  //CODE FOR COPYING AMOUNT STARTS HERE
+  const copyAdd=document.getElementById("copy-add");
+copyAdd.addEventListener('click', clipboardCopy2);
+async function clipboardCopy2() {
+let ad = document.querySelector("#add-d").value;
+await navigator.clipboard.writeText(ad);
+copyAdd.textContent="Copied"
+setInterval(() => {
+   copyAdd.textContent="Copy"
+}, 5000);
+}
+
+//CODE FOR COPYING AMOUNT ENDS HERE
+ </script>
 
 </body>
 </html>
