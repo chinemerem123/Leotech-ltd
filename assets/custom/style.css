@@ -365,6 +365,28 @@
   text-align: right;
 }
 
+.crypto-network {
+  position: relative;
+  width: 50%;
+  height: 80vh;
+  left: 25%;
+  top: calc(50% - 40vh);
+}
+.crypto-network .network-hold {
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  position: relative;
+  align-items: center;
+}
+.crypto-network .network-hold .hold-logo {
+  align-items: center;
+}
+.crypto-network .network-hold .actual-network {
+  position: absolute;
+  right: 20px;
+  text-align: right;
+}
+
 @media screen and (max-width: 800px) {
   .crypto-select {
     width: 100%;

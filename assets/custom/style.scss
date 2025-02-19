@@ -418,6 +418,33 @@ img{
     }
 }
 
+.crypto-network{
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    left: calc(50% - 25%);
+    top: calc(50% - 40vh);
+    // overflow-y: scroll;
+
+    .network-hold{
+        background-color: rgb(245, 245, 245);
+        border-radius: 10px;
+        position: relative;
+        align-items: center;
+        .hold-logo{
+            align-items: center;
+        }
+
+        .actual-network{
+            position: absolute;
+            right: 20px;
+            text-align: right;
+        }
+    }
+
+    
+}
+
 
 @media screen and (max-width:800px){
 
