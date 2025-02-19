@@ -445,8 +445,20 @@ img{
     
 }
 
+.crypto-payment-page{
+    position: relative;
+    width: 50%;
+    left: calc(50% - 25%);
+}
+
 
 @media screen and (max-width:800px){
+
+    .crypto-network{
+        width: 100%;
+        left: calc(50% - 50%);
+        margin-top: 20px;
+    }
 
     .crypto-select{
         width: 100%;

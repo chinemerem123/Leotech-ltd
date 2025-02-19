@@ -387,7 +387,18 @@
   text-align: right;
 }
 
+.crypto-payment-page {
+  position: relative;
+  width: 50%;
+  left: 25%;
+}
+
 @media screen and (max-width: 800px) {
+  .crypto-network {
+    width: 100%;
+    left: 0%;
+    margin-top: 20px;
+  }
   .crypto-select {
     width: 100%;
     left: 0%;
