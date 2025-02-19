@@ -479,6 +479,14 @@ img{
            }
 }
 
+.out-order{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50%);
+    display: none;
+}
+
 
 
 @media screen and (max-width:800px){

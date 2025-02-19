@@ -416,6 +416,14 @@
   align-items: center;
 }
 
+.out-order {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .crypto-payment-page {
     width: 100%;
