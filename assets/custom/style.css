@@ -424,6 +424,12 @@
   display: none;
 }
 
+#my-websites #web-img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 800px) {
   .crypto-payment-page {
     width: 100%;
