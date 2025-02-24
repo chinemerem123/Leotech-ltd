@@ -244,95 +244,112 @@
                     <div class="container-fluid">
                         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
                             <div class="flex-grow-1">
-                                <h3 class="fs-18 fw-semibold m-0">Questions & Answers</h3>
+                                <h3 class="fs-18 fw-semibold m-0">My Tickets</h3>
                             </div>
 
                             <div class="flex-grow-2">
-                              <a href="/user/my-ticket.html" class="btn btn-primary br-50">View my tickets</a>
+                              <buton class="btn btn-primary br-50" data-bs-toggle="modal" data-bs-target="#exampleModal">Create New Ticket</buton>
                                
                             </div>
                         </div>
 
-                         <!-- QUESTIONS AND ANSWER START HERE-->
+                         <!-- TABLE START HERE-->
 
-                         <div class="card overflow-hidden mt-3 P-3 br-15">
+                         <div class="card overflow-hidden mt-4 br-15">
 
-                            <div class="accordion" id="accordionPanelsStayOpenExample">
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                      How to Force https in mvc
-                                    </button>
-                                  </h2>
-                                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                                    <div class="accordion-body">
-                                       <strong>To force HTTPS in an ASP.NET MVC application, follow these steps:</strong> 
+                            <div class="card-header">
+                              
+                       <div class="filter">
+                        <div class="h6">Filter By:</div>
+                        <select name="sort" id="sort" class="form-select">
+                            <option value="all">All Tickets</option>
+                            <option value="pending ">Pending</option>
+                            <option value="close">Closed</option>
+                            <option value="expired">Expired</option>
+                          </select>
+                       </div>
+                            </div>
 
-<li> Use [RequireHttps] Attribute (Controller-Level)
-Apply the [RequireHttps] attribute to specific controllers or actions to enforce HTTPS:</li>
+                            <div class="card-body mt-0">
+                                <div class="table-responsive table-card mt-0">
+                                    <table class="table table-borderless table-centered align-middle table-nowrap mb-0">
+                                        <thead class="text-muted table-light">
+                                            <tr>
+                                                <th scope="col" class="cursor-pointer">Ticket ID</th>
+                                                <th scope="col" class="cursor-pointer">Priority</th>
+                                                <th scope="col" class="cursor-pointer">Subject</th>
+                                                <th scope="col" class="cursor-pointer">Date Created</th>
+                                                <th scope="col" class="cursor-pointer">Status</th>
+                                                <th scope="col" class="cursor-pointer"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="#">#3556745</a></td>
+                                                <td>Emergency</td>
+                                                <td>How to publish .NET Project</td>
+                                                <td>20-01-2025 - 10:20 PM</td>
+                                                <td>
+                                                    <span class="badge bg-warning-subtle text-warning fw-semibold">Pending</span>
+                                                </td>
+                                                <td>
+                                                    <a aria-label="anchor" class="text-info" data-bs-toggle="tooltip" data-bs-original-title="Replied">
+                                                        <i class="mdi mdi-circle text-info"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
 
-<li>Force HTTPS via Web.config (Redirect HTTP to HTTPS)
-    Modify Web.config to redirect all HTTP traffic to HTTPS</li>
+                                            <tr>
+                                                <td><a href="#">#3556745</a></td>
+                                                <td>Normal</td>
+                                                <td>How to publish .NET Project</td>
+                                                <td>20-01-2025 - 10:20 PM</td>
+                                                <td>
+                                                    <span class="badge bg-warning-subtle text-warning fw-semibold">Pending</span>
+                                                </td>
+                                                <td>
+                                                    <a aria-label="anchor" class="text-warning" data-bs-toggle="tooltip" data-bs-original-title="Not Replied">
+                                                        <i class="mdi mdi-circle text-warning"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
 
-    <li>
-        Enforce HTTPS in Startup.cs (For .NET Core MVC)
-        If using ASP.NET Core, enforce HTTPS in Startup.cs</li>
+                                            <tr>
+                                                <td><a href="#">#3556745</a></td>
+                                                <td>Urgent</td>
+                                                <td>Live support enhancement</td>
+                                                <td>12-01-2025 - 4:00 AM</td>
+                                                <td>
+                                                    <span class="badge bg-secondary-subtle text-secondary fw-semibold">Closed</span>
+                                                </td>
+                                                <td>
+                                                 
+                                                </td>
+                                            </tr>
 
-        <strong>Configure IIS to Require SSL</strong>
-<li>Open IIS Manager → Select your site.</li>
-<li>Click SSL Settings.</li>
-<li>Check Require SSL and Ignore Client Certificates.</li>
-<li>Restart the site.</li>
-                                      
-                                    </div>
-                                  </div>
+                                            <tr>
+                                                <td><a href="#">#3556745</a></td>
+                                                <td>Needed</td>
+                                                <td>Live support enhancement</td>
+                                                <td>21-01-2025 - 11:24 PM</td>
+                                                <td>
+                                                    <span class="badge bg-danger-subtle text-danger fw-semibold">Expired</span>
+                                                </td>
+                                                <td>
+                                                   
+                                                </td>
+                                            </tr>
+                                           
+                                           
+                                           
+                                        </tbody><!-- end tbody -->
+                                    </table><!-- end table -->
                                 </div>
-
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                      How to set your domain  nameserver
-                                    </button>
-                                  </h2>
-                                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
-                                    <div class="accordion-body">
-                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                      How long does it take to before my domain name works with your service.
-                                    </button>
-                                  </h2>
-                                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
-                                    <div class="accordion-body">
-                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                                      How to publish .NET Project using msdeploy.exe
-                                      </button>
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
-                                      <div class="accordion-body">
-                                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-
-<button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Create New Ticket</button>
+                            </div>
                             
                         </div>
 
-                             <!-- QUESTIONS AND ANSWER ENDS HERE-->
+                             <!-- TABLE ENDS HERE-->
                       
 
                     </div> <!-- container-fluid -->
@@ -358,56 +375,56 @@ Apply the [RequireHttps] attribute to specific controllers or actions to enforce
         </div>
         <!-- END wrapper -->
 
-          <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button> -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button> -->
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Ticket Details</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-2">
-              <label for="recipient-name" class="col-form-label">Username:</label>
-              <input type="text" class="form-control" id="recipient-name">
-            </div>
-  
-            <div class="mb-2">
-              <label for="domain" class="col-form-label">Domain:</label>
-              <input type="text" class="form-control" id="domain">
-            </div>
-  
-            <div class="mb-2">
-              <label for="email" class="col-form-label">Email:</label>
-              <input type="email" class="form-control" id="email">
-            </div>
-  
-            <div class="mb-2">
-              <label for="priority" class="col-form-label">Priority</label>
-              <select name="sort" id="priority" class="form-select">
-                  <option value="all">Normal</option>
-                  <option value="pending ">Urgent</option>
-                  <option value="close">Emergency</option>
-                </select>
-                <span class="text-orange fs-12">Please select the right priority for your issue</span>
-            </div>
-  
-  
-  
-            <div class="mb-2">
-              <label for="message-text" class="col-form-label">Subject:</label>
-              <textarea class="form-control" id="message-text"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-primary br-50">Create Ticket</button>
-        </div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Ticket Details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-2">
+            <label for="recipient-name" class="col-form-label">Username:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+
+          <div class="mb-2">
+            <label for="domain" class="col-form-label">Domain:</label>
+            <input type="text" class="form-control" id="domain">
+          </div>
+
+          <div class="mb-2">
+            <label for="email" class="col-form-label">Email:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+
+          <div class="mb-2">
+            <label for="priority" class="col-form-label">Priority</label>
+            <select name="sort" id="priority" class="form-select">
+                <option value="all">Normal</option>
+                <option value="pending ">Urgent</option>
+                <option value="close">Emergency</option>
+              </select>
+              <span class="text-orange fs-12">Please select the right priority for your issue</span>
+          </div>
+
+
+
+          <div class="mb-2">
+            <label for="message-text" class="col-form-label">Subject:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary br-50">Create Ticket</button>
       </div>
     </div>
   </div>
+</div>
 
         <!-- Vendor -->
         <script src="/assets/libs/jquery/jquery.min.js"></script>
