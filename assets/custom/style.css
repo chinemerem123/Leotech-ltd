@@ -82,7 +82,7 @@
 }
 
 .btn-log {
-  border-radius: 50px;
+  border-radius: 15px;
   padding: 10px;
   color: white;
   border: none;
@@ -446,7 +446,24 @@
   border-radius: 50%;
 }
 
+.domain-to-expire {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.domain-to-expire .renew {
+  position: absolute;
+  right: 20px;
+}
+
 @media screen and (max-width: 800px) {
+  .domain-to-expire {
+    display: block;
+  }
+  .domain-to-expire .renew {
+    position: relative;
+    right: 0;
+  }
   .crypto-payment-page {
     width: 100%;
     left: 0%;

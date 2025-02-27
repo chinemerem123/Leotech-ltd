@@ -20,7 +20,7 @@
         <!-- Icons -->
         <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="/assets/custom/style.css">
+        <link rel="stylesheet" href="/assets/custom/style.css">
 
     </head>
 
@@ -42,7 +42,7 @@
                                 </button>
                             </li>
                             <li class="d-none d-lg-block">
-                                <h5 class="mb-0"> History</h5>
+                                <h5 class="mb-0"> My Sites </h5>
                             </li>
                         </ul>
 
@@ -244,139 +244,109 @@
                     <div class="container-fluid">
                         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
                             <div class="flex-grow-1">
-                              
+                                <h3 class="fs-18 fw-semibold m-0">My Websites</h3>
+                                <p>All your purchased website will show up here</p>
                             </div>
 
-                            <div class="flex-grow-2 d-flex">
-                              
-                        <div class="filter">
-                            <div class="h6">Filter By Status</div>
-                            <select name="sort" id="sort" class="form-select">
-                                <option value="all">All Status</option>
-                                <option value="pending ">Pending</option>
-                                <option value="close">Successful</option>
-                                <option value="expired">Failed</option>
-                              </select>
-                           </div>
-
-                           <div class="filter ms-2">
-                            <div class="h6">Filter By Service</div>
-                            <select name="sort" id="sort" class="form-select">
-                                <option value="all">All Service</option>
-                                <option value="pending ">Fund account</option>
-                                <option value="close">Purchase site</option>
-                                <option value="expired">Referral bonus</option>
-                              </select>
-                           </div>
-
-
+                            <div class="flex-grow-1">
+                                <select name="sort" id="sort" class="form-select ms-2">
+                                    <option value="#">-- Filter by --</option>
+                                    <option value="popularity ">Ongoing</option>
+                                    <option value="date">Active</option>
+                                    <option value="cheapest">Expired</option>
+                                  </select>
                             </div>
                         </div>
 
                         <!--ROW START HERE-->
 
-                        <div class="card overflow-hidden mt-4 br-15">
-
-                            <div class="card-header d-flex align-items-center">
-                    <div class="h6 fw-bold">Transaction History</div>
-
-                 
+                      <div class="card p-4 br-15" id="my-websites">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-12">
+                                <img src="/assets/images/card2.png" alt="" id="web-img">
                             </div>
 
-                            <div class="card-body mt-0">
-                                <div class="table-responsive table-card mt-0">
-                                    <table class="table table-borderless table-centered align-middle table-nowrap mb-0">
-                                        <thead class="text-muted table-light">
-                                            <tr>
-                                                <th scope="col" class="cursor-pointer">Transaction ID</th>
-                                                <th scope="col" class="cursor-pointer">Service</th>
-                                                <th scope="col" class="cursor-pointer">Date</th>
-                                                <th scope="col" class="cursor-pointer">Amount</th>
-                                                <th scope="col" class="cursor-pointer">Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
+                            <div class="col-md-7 col-sm-12 mt-2 mt-md-0">
+                                <div class="web-name">
+                                    <span class="text-gray">Website type</span><br>
+                                    <span class="fw-bold">Banking Website</span>
+                                </div>
 
-                                            <tr>
-                                                <td>Leotech-#00000</td>
-                                                <td>Fund Account</td>
-                                                <td>20-01-2025 - 10:20 PM</td>
-                                                <td>$250.00</td>
-                                                <td>
-                                                    <span class="badge bg-success-subtle text-success fw-semibold">Successful</span>
-                                                </td>
-                                               
-                                            </tr>
+                                <div class="web-domain mt-3">
+                                    <span class="text-gray">Website Demo (For previewing progress)</span><br>
+                                    <a href="#" class="fw-bold">https://www.banking-demo-preview.vercel.app</a>
+                                </div>
 
-                                            <tr>
-                                                <td>Leotech-#10000</td>
-                                                <td>Purchased Site</td>
-                                                <td>20-01-2025 - 10:20 PM</td>
-                                                <td>$180.00</td>
-                                                <td>
-                                                    <span class="badge bg-warning-subtle text-warning fw-semibold">Pending</span>
-                                                </td>
-                                               
-                                            </tr>
+                                <div class="d-flex mt-3">
+                                <div class="web-status">
+                                    <span class="text-gray">Status</span><br>
+                                  <span class="fw-bold text-orange">In Progress</span>
+                                </div>
 
-                                            
-                                            <tr>
-                                                <td>Leotech-#20000</td>
-                                                <td>Purchased Site</td>
-                                                <td>20-01-2025 - 10:20 PM</td>
-                                                <td>$180.00</td>
-                                                <td>
-                                                    <span class="badge bg-danger-subtle text-danger fw-semibold">Failed</span>
-                                                </td>
-                                               
-                                            </tr>
-
-                                            <tr>
-                                                <td>Leotech-#40000</td>
-                                                <td>Fund Account</td>
-                                                <td>20-01-2025 - 10:20 PM</td>
-                                                <td>$250.00</td>
-                                                <td>
-                                                    <span class="badge bg-success-subtle text-success fw-semibold">Successful</span>
-                                                </td>
-                                               
-                                            </tr>
-
-                                            <tr>
-                                                <td>Leotech-#50000</td>
-                                                <td>Referral bonus</td>
-                                                <td>20-01-2025 - 10:20 PM</td>
-                                                <td>$50.00</td>
-                                                <td>
-                                                    <span class="badge bg-success-subtle text-success fw-semibold">Successful</span>
-                                                </td>
-                                               
-                                            </tr>
-                                           
-                                           
-                                           
-                                        </tbody><!-- end tbody -->
-                                    </table><!-- end table -->
+                                <div class="web-puchased-date ms-3">
+                                    <span class="text-gray">Purchased Date</span><br>
+                                  <span class="fw-bold">2-02-2025</span>
                                 </div>
                             </div>
 
-                            <div class="card-footer">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination justify-content-center">
-                                      <li class="page-item disabled">
-                                        <a class="page-link">Previous</a>
-                                      </li>
-                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                      <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                      </li>
-                                    </ul>
-                                  </nav>
+                            <div class="web-domain mt-3">
+                                <span class="text-gray">Website Domain</span><br>
+                                <a href="#" class="fw-bold">https://www.banking.com</a>
                             </div>
-                            
+
+                            <div class="web-domain-expire mt-3">
+                                <span class="text-gray">Domain Expires on</span><br>
+                                <a href="#" class="fw-bold">-</a>
+                            </div>
+
+                            </div>
+
                         </div>
+                      </div>
+
+                      <div class="card p-4 br-15 mt-2" id="my-websites">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-12">
+                                <img src="/assets/images/DASHBOARD.png" alt="" id="web-img">
+                            </div>
+
+                            <div class="col-md-7 col-sm-12 mt-2 mt-md-0">
+                                <div class="web-name">
+                                    <span class="text-gray">Website type</span><br>
+                                    <span class="fw-bold">Investment Website</span>
+                                </div>
+
+                                <div class="web-domain mt-3">
+                                    <span class="text-gray">Website Demo (For previewing progress)</span><br>
+                                    <a href="#" class="fw-bold">https://www.investment-demo-preview.vercel.app</a>
+                                </div>
+
+                                <div class="d-flex mt-3">
+                                <div class="web-status">
+                                    <span class="text-gray">Status</span><br>
+                                  <span class="fw-bold text-success">Active</span>
+                                </div>
+
+                                <div class="web-puchased-date ms-3">
+                                    <span class="text-gray">Purchased Date</span><br>
+                                  <span class="fw-bold">2-02-2025</span>
+                                </div>
+                            </div>
+
+                            <div class="web-domain mt-3">
+                                <span class="text-gray">Website Domain</span><br>
+                                <a href="#" class="fw-bold">https://www.banking.com</a>
+                            </div>
+
+                            <div class="web-domain-expire mt-3">
+                                <span class="text-gray">Domain Expires on</span><br>
+                                <a href="#" class="fw-bold">2-02-2026</a>
+                            </div>
+
+                            </div>
+
+                        </div>
+                      </div>
 
                          <!--ROW ENDS HERE-->
                       
