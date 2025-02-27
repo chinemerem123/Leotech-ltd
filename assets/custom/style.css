@@ -453,7 +453,17 @@
 }
 .domain-to-expire .renew {
   position: absolute;
-  right: 20px;
+  right: 10px;
+}
+
+.icon-box {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff7ff;
+  border-radius: 3px;
 }
 
 @media screen and (max-width: 800px) {
