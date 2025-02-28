@@ -86,7 +86,7 @@
     /* padding: 12px; */
 }
 .btn-log{
-    border-radius: 15px;
+    border-radius: 8px;
     padding: 10px;
     color: white;
     border: none;
@@ -95,7 +95,7 @@
 }
 
 .btn-stroke{
-    border-radius: 50px;
+    border-radius: 8px;
     padding: 10px;
     color: #FF9500;
     border: 1.5px solid #FF9500;
@@ -533,8 +533,92 @@ img{
     border-radius: 3px;
 }
 
+.search-bar-box{
+    form{
+        width: 60%;
+        position: relative;
+        left: calc(50% - 30%);
+        padding: 20px;
+        // display: flex;
+        // justify-content: center;
+        align-items:center;
+        background-color: white;
+        border-radius: 15px;
 
+        input{
+            border: none;
+            margin-left: 10px;
+        }
+    }
+}
+
+#already-taken-domain{
+    background-color:rgba(255, 149, 0,0.1);
+    border: 1px sold rgb(255, 187, 91);
+    box-shadow: none;
+}
+
+#exact-domain{
+    display: flex;
+    position: relative;
+    box-shadow: none;
+    .exact{
+        .badge{
+            width: 100px;
+            padding: 10px;
+        }
+    }
+
+    .price-buy{
+        align-items: center;
+        position: absolute;
+        right: 20px;
+        // justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+}
+
+.more-option{
+    .exact-domain{
+        box-shadow: none;
+        position: relative;
+        .price-buy{
+            align-items: center;
+            position: absolute;
+            right: 20px;
+            // justify-content: center;
+            align-items: center;
+        }
+    }
+}
 @media screen and (max-width:800px){
+
+    #exact-domain{
+        display: block;
+
+        .price-buy{
+            position: relative;
+            right: 0;
+        }
+    }
+
+    .more-option{
+        .exact-domain{
+            .price-buy{
+                position: relative;
+                right: 0;
+            }
+        }
+    }
+
+    .search-bar-box{
+        form{
+            width: 100%;
+            left: calc(50% - 50%);
+        }
+    }
 
     .domain-to-expire{
         display: block;
