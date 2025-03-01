@@ -529,6 +529,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .w-300 {
+    width: 300%;
+  }
   #w-200 {
     width: 300%;
   }
