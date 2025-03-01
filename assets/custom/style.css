@@ -524,6 +524,9 @@
   margin-top: 10px;
   border-radius: 10px;
 }
+.notification-item .noti-msg .d-flex .h6 {
+  margin-top: 2px;
+}
 
 @media screen and (max-width: 800px) {
   #w-200 {
