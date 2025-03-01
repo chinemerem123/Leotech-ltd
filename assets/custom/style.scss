@@ -330,6 +330,7 @@ img{
     position: relative;
     transition: 0.3s;
     border-radius: 15px;
+    box-shadow: none;
 
     &:hover{
         border: 2px solid #FF9500;
@@ -593,7 +594,26 @@ img{
         }
     }
 }
+
+.notification-item{
+    background-color: transparent;
+    box-shadow: none;
+
+    .noti-msg{
+        border: 1px solid gray;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+}
+
 @media screen and (max-width:800px){
+
+    #w-200{
+        width: 300%;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
 
     #exact-domain{
         display: block;

@@ -289,6 +289,7 @@
   position: relative;
   transition: 0.3s;
   border-radius: 15px;
+  box-shadow: none;
 }
 .payment-method-item:hover {
   border: 2px solid #FF9500;
@@ -514,7 +515,23 @@
   align-items: center;
 }
 
+.notification-item {
+  background-color: transparent;
+  box-shadow: none;
+}
+.notification-item .noti-msg {
+  border: 1px solid gray;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 800px) {
+  #w-200 {
+    width: 300%;
+  }
+  #w-200::-webkit-scrollbar {
+    display: none;
+  }
   #exact-domain {
     display: block;
   }
