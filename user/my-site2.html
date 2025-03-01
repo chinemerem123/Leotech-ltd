@@ -298,14 +298,14 @@
                                       
                                         <ul class="dropdown-menu">
                                           <li>
-                                            <a class="dropdown-item d-flex" href="#" >
+                                            <a class="dropdown-item d-flex" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                 <i class="mdi mdi-square-edit-outline text-info"></i>
                                                 <span class="ms-1">Edit website name</span>
                                            
                                         </a>
                                         </li>
                                           <li>
-                                            <a class="dropdown-item" href="#">
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                                                 <i class="mdi mdi-delete-empty-outline text-danger"></i>
                                                 <span>Delete Website</span> 
 
@@ -352,6 +352,49 @@
 
         </div>
         <!-- END wrapper -->
+
+         <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal change website name-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Website name</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="website-name">Enter new website name</label>
+            <input type="text" name="" class="form-control mt-1" id="website-name">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal Delete website-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+           
+            <div class="modal-body p-2 mt-3">
+             <div class="h6 fw-bold text-center">Delete Website</div>
+             <p class="text-center mt-1">Are you sure you want to delete this webiste? Note all data will be lost.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">No</button>
+              <button type="button" class="btn btn-danger">Yes, Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
         <!-- Vendor -->
         <script src="/assets/libs/jquery/jquery.min.js"></script>
